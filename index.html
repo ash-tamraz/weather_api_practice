@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" type="module"></script>
+    <script src="parser.js" type="module"></script>
+    <title>weather exercise</title>
+  </head>
+
+  <body>
+    <form id="location_input_form">
+      <label for="lat">Latitude:</label>
+      <input type="number" id="lat" name="latitude" value="45.544000">
+      <label for="lon">Longitude:</label>
+      <input type="number" id="lon" name="longitude" value="-122.866056">
+    </form>
+
+    <button id="location_input">Submit</button>
+  
+    <table id="results">
+      <thead>
+        <tr>
+          <th colspan="1">
+          Measurements
+          </th>
+          <th colspan="2">
+          Results
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="temp">
+          <td>Temp.</td>
+          <td id="temp_data"></td>
+        </tr>
+        <tr id="prcp">
+          <td>Rainfall</td>
+          <td id="rainfall_data"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+
+
+</html>
